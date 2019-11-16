@@ -7,12 +7,10 @@ class App extends Component {
   state = {
   }
 
-  // Swapp Original Website into this and this new one to mobile
-
   render() {
     return (
       <div>
-        hi
+        Welcome to GO LTE Group Project
       </div>
     );
   }
