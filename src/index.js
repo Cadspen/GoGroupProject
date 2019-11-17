@@ -9,6 +9,7 @@ import reducers from './reducers'
 import './style/index.scss'
 
 import App from './components/App'
+import Board from './components/Board'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -18,6 +19,7 @@ function main() {
 			<BrowserRouter>
 				<Switch>
 					<Route exact path="/" component={App}/>
+					<Route exact path="/board" component={Board}/>
 				</Switch>
 			</BrowserRouter>
 		</Provider>
