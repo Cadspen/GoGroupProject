@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 
 class App extends Component {
 
-  state = {
-    change : 22
-  }
-
   render() {
     return (
       <div id='app'>
@@ -17,6 +13,9 @@ class App extends Component {
         </div>
         <div className='appButtons'>
           <Link to='/board' className='appLocal' >
+            Board
+          </Link>
+          <Link to='/local' className='appLocal' >
             Play Local
           </Link>
         </div>

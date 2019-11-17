@@ -10,6 +10,7 @@ import './style/index.scss'
 
 import App from './components/App'
 import Board from './components/Board'
+import LocalSetup from './components/LocalSetup'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
 
@@ -20,6 +21,7 @@ function main() {
 				<Switch>
 					<Route exact path="/" component={App}/>
 					<Route exact path="/board" component={Board}/>
+					<Route exact path="/local" component={LocalSetup}/>
 				</Switch>
 			</BrowserRouter>
 		</Provider>
