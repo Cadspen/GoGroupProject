@@ -9,12 +9,12 @@ class Board extends Component {
 
   boardCube = () => {
     return(
-      <div style={{ width:'10px', height:'10px', backgroundColor:'black', borderStyle:'solid'}}/>
+      <div style={{ width:'10px', height:'10px', backgroundColor:'blue', borderStyle:'solid'}}/>
     )
   }
 
-  boardCol = (size) => {
-    return (<div style={{ display:'flex', flexDirection:'column'}}>
+  boardCol = (size, key) => {
+    return (<div key={key} style={{ display:'flex', flexDirection:'column'}}>
     {
       size.map(() => this.boardCube())
     }
@@ -33,7 +33,7 @@ class Board extends Component {
   render() {
     return (
       <div>
-        {this.boardRow(3)}
+        {this.boardRow([1,2,3,4,5,6,7,8,9])}
       </div>
     );
   }
