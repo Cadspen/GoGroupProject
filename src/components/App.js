@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import * as actions from '../reducers/actions'
+import { Link } from 'react-router-dom'
 
 class App extends Component {
 
@@ -10,12 +11,15 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        Welcome to GO LTE Group Project
-        {this.props.change}
-        <button onClick={() => this.props.changeState({ change : this.props.change + 1})}/>
-        <button onClick={() => this.setState({ change : this.state.change + 1})}/>
-        {this.state.change}
+      <div id='app'>
+        <div className='appTitle'>
+          Welcome to Go!!
+        </div>
+        <div className='appButtons'>
+          <Link to='/board' className='appLocal' >
+            Play Local
+          </Link>
+        </div>
       </div>
     );
   }

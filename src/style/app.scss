@@ -1,0 +1,32 @@
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    .appTitle {
+        display: flex;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    .appButtons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .appLocal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: whitesmoke;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                background-color: grey;
+            }
+        }
+    }
+}
