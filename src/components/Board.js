@@ -9,7 +9,7 @@ class Board extends Component {
 
   boardCube = () => {
     return(
-      <div style={{ width:'10px', height:'10px', backgroundColor:'blue', borderStyle:'solid'}}/>
+      <div style={{ width:'40px', height:'40px', backgroundColor:'blue', borderStyle:'solid'}}/>
     )
   }
 
@@ -32,7 +32,7 @@ class Board extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{}}>
         {this.boardRow([1,2,3,4,5,6,7,8,9])}
       </div>
     );
